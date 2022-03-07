@@ -1,0 +1,10 @@
+--version 1.1--
+•.xsl file creation
+•added citations and bibliographic fields for Books, Articles from Periodicles, Conference Proceedings, Documents From Websites,
+Films, Journals/Articles, Reports, Websites, and misc.
+--version 1.2--
+•added Important Fields for Sources Editor
+•removed "et al." at the end of the author field when more than 4 authors are present.
+--version 1.3--
+•added citations and biliogrphic fields for Electronic Sources, Interviews, and Performances
+•added pages to the book section citiation. Format is now. (AuthorLastName, Year: Pages)

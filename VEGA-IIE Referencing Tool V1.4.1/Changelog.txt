@@ -1,0 +1,20 @@
+--Version 1.1--
+•.xsl file creation
+•added citations and bibliographic fields for Books, Articles from Periodicles, Conference Proceedings, Documents From Websites,
+Films, Journals/Articles, Reports, Websites, and misc.
+
+--Version 1.2--
+•added Important Fields for Sources Editor
+•removed "et al." at the end of the author field when more than 4 authors are present.
+
+--Version 1.3--
+•added citations and biliogrphic fields for Electronic Sources, Interviews, and Performances
+•added pages to the book section citiation. Format is now. (AuthorLastName, Year: Pages)
+
+--Version 1.4--
+•temporarily removed Performances due to <b:ImportantField> related issues
+•added citations for all source types, even ones currently unsupported by the automatic reference list
+•[code exclusive  - changes nothing in use] reformatted all the source types under Important fields, bibliography, citations, etc. to be in alphabetical order
+
+--Version 1.4.1--
+•fixed Version 1.4 related bugs
