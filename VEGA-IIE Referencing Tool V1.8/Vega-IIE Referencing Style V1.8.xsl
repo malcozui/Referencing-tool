@@ -21,6 +21,7 @@
       <citation_as_link>no</citation_as_link>
     </general>
     <importantfields>
+    <!--comment for checking-->
 	  <source type="Art">
         <b:ImportantField>b:Author/b:Artist/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
