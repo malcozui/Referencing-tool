@@ -1,0 +1,1 @@
+@move "Vega-IIE Referencing Style V1.8.xsl" "%appdata%\Microsoft\Bibliography\Style\"
