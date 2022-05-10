@@ -10,18 +10,18 @@
   <xsl:variable name="data">
     <general>
       <stylename>VEGA-IIE Referencing Style</stylename>
-      <version>2022.1.8</version>
+      <version>2022.1.9</version>
       <author>Malcom Thonger (malcomthonger@gmail.com)</author>
       <description>An implimentation of the VEGA-IIE style adapted from the Harvard style.</description>
       <URL>http://bibword.codeplex.com/updateStyle?id=123</URL>
       <comments>
-        This is version 1.8 of malcoms VEGA-IIE xsl sheet
+        This is version 1.9 of malcoms VEGA-IIE xsl sheet
       </comments>
       <display_errors>yes</display_errors>
       <citation_as_link>no</citation_as_link>
     </general>
     <importantfields>
-    <!--comment for checking-->
+	<!--the fields that are suggested to filled in when adding a citation-->
 	  <source type="Art">
         <b:ImportantField>b:Author/b:Artist/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
@@ -172,6 +172,7 @@
       </source>
     </importantfields>
     <citation>
+	<!--How the citations are formatted-->
       <openbracket>(</openbracket>
      <closebracket>)</closebracket>
      <separator> - </separator>
@@ -244,6 +245,7 @@
       </source>
     </footnotecitation>
     <bibliography>
+	<!--all the formatting for the reference list-->
       <columns>1</columns>
       <source type="Placeholder">
         <column id="1">
@@ -359,6 +361,7 @@
       </source>
     </bibliography>
     <namelists>
+	<!--some additional formatting for stuff like overflow for too many authors etc.-->
       <list name="sort" id="0">
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
@@ -421,6 +424,7 @@
       </list>
     </namelists>
     <strings>
+	<!--shorthands used through out the document-->
       <months>
         <month number="1">Jan</month>
         <month number="2">Feb</month>
@@ -456,6 +460,7 @@
       </sourcetypes>
     </strings>
     <extensions>
+	<!--extentions-->
     </extensions>    
   </xsl:variable>
 

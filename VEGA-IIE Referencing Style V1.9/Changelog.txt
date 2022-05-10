@@ -40,3 +40,7 @@ Films, Journals/Articles, Reports, Websites, and misc.
 --Version 1.8--
 •made it so that book citations no longer have a random space after the year when no pages are present, e.g. (Schell, 2002 ) v.s. (Schell, 2002)
 •fixed bibliography field for Art source type
+
+-version 1.9--
+•added comments throughout the .xsl file
+•added a .bat file to suto install the .xsl file
