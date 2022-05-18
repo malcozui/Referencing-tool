@@ -221,7 +221,7 @@
         <format>{%Year%}: {%Pages%}</format>
       </source>
       <source type="Misc">
-        <format>{%Author:1%:}: {%Year%}</format>
+        <format>{%Author:1%:}, {%Year%}</format>
       </source>
 	  <source type="Performance">
         <format>{%Title%}, {%Year%}</format>

@@ -44,3 +44,4 @@ Films, Journals/Articles, Reports, Websites, and misc.
 -version 1.9--
 •added comments throughout the .xsl file
 •added a .bat file to suto install the .xsl file
+•fixed the citation for misc reference types
