@@ -45,3 +45,5 @@ Films, Journals/Articles, Reports, Websites, and misc.
 •added comments throughout the .xsl file
 •added a .bat file to suto install the .xsl file
 •fixed the citation for misc reference types
+•fixed bibliography entry for misc to now include the url information when applicable
+•modified the art bibliography formatting.

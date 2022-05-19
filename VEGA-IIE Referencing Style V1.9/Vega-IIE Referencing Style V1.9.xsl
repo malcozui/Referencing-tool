@@ -259,7 +259,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Artist:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.}{ %City%:}{ %Publisher%. }{ %Comments%.}</format>
+          <format>{%Artist:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.}{ %Medium%.}{ %Pages%.}{ %Publisher%,}{ %City%}{ %Comments%.}</format>
         </column>
         <sortkey>{%Artist:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -307,7 +307,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|InternetSiteTitle%.}{ [%Medium|"Online"%].}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;/i&gt;%Title|InternetSiteTitle%&lt;/i&gt;.}{ [%Medium|"Online"%].}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|"Anon."%}{%Year|"n.d."%}{%Title:a|InternetSiteTitle:a%}</sortkey>
       </source>
@@ -315,7 +315,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Title|ShortTitle%.}{ %Year|"n.d."%{%YearSuffix%}.}{ Directed by %Director%.}{ [%Medium|"Film"%].}{ %City|CountryRegion%{, %CountryRegion%}}{: %Publisher|ProductionCompany%}}{ %Publisher|ProductionCompany%}.{ %Comments%.}</format>
+          <format>{%Title|ShortTitle%.}{ %Year|"n.d."%{%YearSuffix%}.}{ Directed by %Director:4%.}{ [%Medium|"Film"%].}{ %City|CountryRegion%{, %CountryRegion%}}{: %Publisher|ProductionCompany%}}{ %Publisher|ProductionCompany%}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Director:0%}{%Year|"n.d."%}</sortkey>
       </source>
@@ -347,7 +347,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.}{ [%Medium%]}{ %City|CountryRegion%{, %CountryRegion%}}{: %Publisher%.}{ %comments%}</format>
+          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.}{ [%Medium%]}{ %City|CountryRegion%{, %CountryRegion%}}{: %Publisher%.}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %comments%}</format>
         </column>
         <sortkey>{%Author:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -421,6 +421,21 @@
         <overflow>, et al.</overflow>
         <single_suffix>, editor</single_suffix>
         <multi_suffix>, editors</multi_suffix>
+      </list>
+	  <list name="full-name" id="4">
+        <single_prefix></single_prefix>
+        <multi_prefix></multi_prefix>
+        <corporate>{%Corporate%}</corporate>
+        <first_person>{%Last%},{ %First%}.{%Middle%}.</first_person>
+        <other_persons>{%Last|First%},{ %First:a%}.{%Middle:a%}.</other_persons>
+        <separator_between_if_two>, </separator_between_if_two>
+        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_before_last>, </separator_before_last>
+        <max_number_of_persons_to_display>3</max_number_of_persons_to_display>
+        <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
+        <overflow>, et al.</overflow>
+        <single_suffix></single_suffix>
+        <multi_suffix></multi_suffix>
       </list>
     </namelists>
     <strings>
