@@ -24,10 +24,12 @@
 	    <!--the fields that are suggested to filled in when adding a citation-->
 	    <source type="Art">
         <b:ImportantField>b:Author/b:Artist/b:NameList</b:ImportantField>
-        <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
-        <b:ImportantField>b:City</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
+        <b:ImportantField>b:City</b:ImportantField>
       </source>
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -177,10 +179,10 @@
     </importantfields>
     <citation>
 	    <!--How the citations are formatted-->
-      <openbracket>(</openbracket>
-      <closebracket>)</closebracket>
+      <openbracket></openbracket>
+      <closebracket></closebracket>
       <separator> - </separator>
-      <noauthor>-Author-BookAuthor-Editor-Inventor-</noauthor>
+      <noauthor>-Author-BookAuthor-Editor-Inventor-Artist-</noauthor>
       <notitle>-Title-ShortTitle-</notitle>
       <noyear>-Year-"n.d."-</noyear>
       <nopages>-Pages-</nopages>
@@ -189,49 +191,49 @@
         <format>[%Tag%]</format>
       </source>
       <source type="Art">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>{%Author:2|Artist:2%.} {%Year%.} {&lt;i&gt;%Title%&lt;/i&gt;.} {%Medium%.} {%Comments%.} {%Publisher%, }{%City%.}</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="Book">
-        <format>{%Author:1%}, {%Year%}{:%Pages%}</format>
+        <format>({%Author:1%}, {%Year%}{:%Pages%})</format>
       </source>
       <source type="BookSection">
-        <format>{%Author:1%}, {%Year%}{:%Pages%}</format>
+        <format>({%Author:1%}, {%Year%}{:%Pages%})</format>
       </source>
       <source type="Case">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="DocumentFromInternetSite">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="ElectronicSource">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="Film">
-        <format>{%Title:1%}, {%Year%}</format>
+        <format>({%Title:1%}, {%Year%})</format>
       </source>
       <source type="InternetSite">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="Interview">
-        <format>{%Interviewee:1%}, {%Year%}</format>
+        <format>({%Interviewee:1%}, {%Year%})</format>
       </source>
       <source type="JournalArticle">
-        <format>{%Year%}: {%Pages%}</format>
+        <format>({%Year%}: {%Pages%})</format>
       </source>
       <source type="Misc">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
       <source type="Performance">
-        <format>{%Title%}, {%Year%}</format>
+        <format>({%Title%}, {%Year%})</format>
       </source>
       <source type="Report">
-        <format>{%Author:1%}, {%Year%}</format>
+        <format>({%Author:1%}, {%Year%})</format>
       </source>
     </citation>
     <footnotecitation>
@@ -263,7 +265,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Artist:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.}{ %Medium%.}{ %Pages%.}{ %Publisher%,}{ %City%}{ %Comments%.}</format>
+          <format>{%Artist:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;. }{%City%: }{%Publisher%.}</format>
         </column>
         <sortkey>{%Artist:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -400,8 +402,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}.</corporate>
-        <first_person>{%Last|First%},{ %First:a%}.{%Middle:a%}.</first_person>
-        <other_persons>{%Last|First%},{ %First:a%}.{%Middle:a%}.</other_persons>
+        <first_person>{%Last|First%},{ %First:a%.}{%Middle:a%.}</first_person>
+        <other_persons>{%Last|First%},{ %First:a%.}{%Middle:a%.}</other_persons>
         <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, and </separator_before_last>
