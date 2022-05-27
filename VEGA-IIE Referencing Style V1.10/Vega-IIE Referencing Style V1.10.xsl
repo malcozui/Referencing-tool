@@ -167,6 +167,7 @@
         <b:ImportantField>b:PublicationTitle</b:ImportantField>
         <b:ImportantField>b:Medium</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Country/b:Region</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:YearAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
