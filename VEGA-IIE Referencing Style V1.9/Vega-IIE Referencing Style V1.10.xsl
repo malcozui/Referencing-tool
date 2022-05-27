@@ -20,9 +20,9 @@
       <display_errors>yes</display_errors>
       <citation_as_link>no</citation_as_link>
     </general>
-  <importantfields>
-	  <!--the fields that are suggested to filled in when adding a citation-->
-	  <source type="Art">
+    <importantfields>
+	    <!--the fields that are suggested to filled in when adding a citation-->
+	    <source type="Art">
         <b:ImportantField>b:Author/b:Artist/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
@@ -41,7 +41,7 @@
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
         <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
-	  <source type="Book">
+	    <source type="Book">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:Edition</b:ImportantField>
@@ -146,12 +146,12 @@
         <b:ImportantField>b:URL</b:ImportantField>
         <b:ImportantField>b:Medium</b:ImportantField>
       </source>
-	  <source type="Interview">
+	    <source type="Interview">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Author/b:Interviewer/b:NameList</b:ImportantField>
-		<b:ImportantField>b:Author/b:Interviewee/b:NameList</b:ImportantField>
-		<b:ImportantField>b:Broadcast</b:ImportantField>
-		<b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Author/b:Interviewee/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Broadcast</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:BroadcastTitle</b:ImportantField>
         <b:ImportantField>b:InternetSiteTitle</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
@@ -173,16 +173,16 @@
         <b:ImportantField>b:DayAccessed</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
       </source>
-  </importantfields>
-  <citation>
-	  <!--How the citations are formatted-->
+    </importantfields>
+    <citation>
+	    <!--How the citations are formatted-->
       <openbracket>(</openbracket>
-     <closebracket>)</closebracket>
-     <separator> - </separator>
-     <noauthor>-Author-BookAuthor-Editor-Inventor-</noauthor>
-     <notitle>-Title-ShortTitle-</notitle>
-     <noyear>-Year-"n.d."-</noyear>
-     <nopages>-Pages-</nopages>
+      <closebracket>)</closebracket>
+      <separator> - </separator>
+      <noauthor>-Author-BookAuthor-Editor-Inventor-</noauthor>
+      <notitle>-Title-ShortTitle-</notitle>
+      <noyear>-Year-"n.d."-</noyear>
+      <nopages>-Pages-</nopages>
 
       <source type="Placeholder">
         <format>[%Tag%]</format>
@@ -208,7 +208,7 @@
       <source type="DocumentFromInternetSite">
         <format>{%Author:1%}, {%Year%}</format>
       </source>
-	  <source type="ElectronicSource">
+      <source type="ElectronicSource">
         <format>{%Author:1%}, {%Year%}</format>
       </source>
       <source type="Film">
@@ -217,7 +217,7 @@
       <source type="InternetSite">
         <format>{%Author:1%}, {%Year%}</format>
       </source>
-	  <source type="Interview">
+      <source type="Interview">
         <format>{%Interviewee:1%}, {%Year%}</format>
       </source>
       <source type="JournalArticle">
@@ -226,7 +226,7 @@
       <source type="Misc">
         <format>{%Author:1%}, {%Year%}</format>
       </source>
-	  <source type="Performance">
+      <source type="Performance">
         <format>{%Title%}, {%Year%}</format>
       </source>
       <source type="Report">
@@ -248,7 +248,7 @@
       </source>
     </footnotecitation>
     <bibliography>
-	<!--all the formatting for the reference list-->
+	    <!--all the formatting for the reference list-->
       <columns>1</columns>
       <source type="Placeholder">
         <column id="1">
@@ -266,7 +266,7 @@
         </column>
         <sortkey>{%Artist:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
-	  <source type="ArticleInAPeriodical">
+	    <source type="ArticleInAPeriodical">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
@@ -306,7 +306,7 @@
         </column>
         <sortkey>{%Author:0|InternetSiteTitle:a|"Anon."%}{%Year|"n.d."%}{%Title:a%}</sortkey>
       </source>
-	  <source type="ElectronicSource">
+	    <source type="ElectronicSource">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
@@ -330,7 +330,7 @@
         </column>
         <sortkey>{%Author:0|"Anon."%}{%Year|"n.d."%}{%Title:a|InternetSiteTitle:a%}</sortkey>
       </source>
-	  <source type="Interview">
+	    <source type="Interview">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
@@ -364,7 +364,7 @@
       </source>
     </bibliography>
     <namelists>
-	<!--some additional formatting for stuff like overflow for too many authors etc.-->
+	    <!--some additional formatting for stuff like overflow for too many authors etc.-->
       <list name="sort" id="0">
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
@@ -425,12 +425,12 @@
         <single_suffix>, editor</single_suffix>
         <multi_suffix>, editors</multi_suffix>
       </list>
-	  <list name="full-name" id="4">
+	    <list name="full-name" id="4">
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last%},{ %First%}.{%Middle%}.</first_person>
-        <other_persons>{%Last|First%},{ %First:a%}.{%Middle:a%}.</other_persons>
+        <other_persons>{%Last|First%},{ %First%}.{%Middle%}.</other_persons>
         <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, </separator_before_last>
@@ -442,7 +442,7 @@
       </list>
     </namelists>
     <strings>
-	<!--shorthands used through out the document-->
+	    <!--shorthands used through out the document-->
       <months>
         <month number="1">Jan</month>
         <month number="2">Feb</month>
@@ -478,7 +478,7 @@
       </sourcetypes>
     </strings>
     <extensions>
-	<!--extentions-->
+	    <!--extentions-->
     </extensions>    
   </xsl:variable>
 
