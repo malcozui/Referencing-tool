@@ -53,3 +53,4 @@ Films, Journals/Articles, Reports, Websites, and misc.
 •[code exclusive  - changes nothing in use] aligned stuff properly to more easily use my .xml IDE
 •added city to misc ImportantFields
 •fixed art citation and bibliography entries (note must update the .wordx guide to include how to use art ref type.)
+•fixed citations so they now work correctly when the author is supressed
