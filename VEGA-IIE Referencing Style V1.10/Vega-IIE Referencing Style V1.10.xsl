@@ -194,46 +194,46 @@
         <format>{%Author:2|Artist:2%.} {%Year%.} {&lt;i&gt;%Title%&lt;/i&gt;.} {%Medium%.} {%Comments%.} {%Publisher%, }{%City%.}</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="Book">
-        <format>({%Author:1%}, {%Year%}{:%Pages%})</format>
+        <format>({%Author:1%, }{%Year%}{:%Pages%})</format>
       </source>
       <source type="BookSection">
-        <format>({%Author:1%}, {%Year%}{:%Pages%})</format>
+        <format>({%Author:1%, }{%Year%}{:%Pages%})</format>
       </source>
       <source type="Case">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="DocumentFromInternetSite">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="ElectronicSource">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="Film">
-        <format>({%Title:1%}, {%Year%})</format>
+        <format>({%Title:1%, }{%Year%})</format>
       </source>
       <source type="InternetSite">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="Interview">
-        <format>({%Interviewee:1%}, {%Year%})</format>
+        <format>({%Interviewee:1%, }{%Year%})</format>
       </source>
       <source type="JournalArticle">
-        <format>({%Year%}: {%Pages%})</format>
+        <format>({%Year%: }{%Pages%})</format>
       </source>
       <source type="Misc">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
       <source type="Performance">
-        <format>({%Title%}, {%Year%})</format>
+        <format>({%Title%, }{%Year%})</format>
       </source>
       <source type="Report">
-        <format>({%Author:1%}, {%Year%})</format>
+        <format>({%Author:1%, }{%Year%})</format>
       </source>
     </citation>
     <footnotecitation>
