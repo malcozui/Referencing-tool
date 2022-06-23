@@ -20,7 +20,7 @@ Films, Journals/Articles, Reports, Websites, and misc.
 •fixed Version 1.4 related bugs
 
 --Version 1.5--
-•fixed a bug which would cause the Authors on Book and BookSection reference types in their respective citations to display incorrectly, now it should be
+•fixed a bug which would cause the Authors on Book and BookSection source types in their respective citations to display incorrectly, now it should be
 	Single Author: (AuthorLastName, Year)
 	Multiple Authors(>3): (AuthorLastName. et al. Year)
 •[code exclusive  - changes nothing in use] changed the namelist "citations", i.d. 1, to now functionn properly and format all author citations correctly
@@ -44,7 +44,7 @@ Films, Journals/Articles, Reports, Websites, and misc.
 --version 1.9--
 •added comments throughout the .xsl file
 •added a .bat file to suto install the .xsl file
-•fixed the citation for misc reference types
+•fixed the citation for misc source types
 •fixed bibliography entry for misc to now include the url information when applicable
 •modified the art bibliography formatting.
 •modified the .bat installer to create the directory if not present
@@ -54,3 +54,6 @@ Films, Journals/Articles, Reports, Websites, and misc.
 •added city to misc ImportantFields
 •fixed art citation and bibliography entries (note must update the .wordx guide to include how to use art ref type.)
 •fixed citations so they now work correctly when the author is supressed
+•fixed sorting issue on the film source type
+•implimented the journal article source type
+•broke article from Periodicle source type

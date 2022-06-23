@@ -34,14 +34,20 @@
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Author/b:Editor/b:NameList</b:ImportantField>
-        <b:ImportantField>b:Title</b:ImportantField>
-        <b:ImportantField>b:Edition</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:PeriodicalTitle</b:ImportantField>
+        <b:ImportantField>b:Edition</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:YearAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
         <b:ImportantField>b:DayAccessed</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
 	    <source type="Book">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -117,10 +123,15 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
+        <b:ImportantField>b:Volume</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
+        <b:ImportantField>b:Issue</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
         <b:ImportantField>b:YearAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
         <b:ImportantField>b:DayAccessed</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
       <source type="Report">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -224,7 +235,7 @@
         <format>({%Interviewee:1%, }{%Year%})</format>
       </source>
       <source type="JournalArticle">
-        <format>({%Year%: }{%Pages%})</format>
+        <format>({%Year%}{: %Pages%})</format>
       </source>
       <source type="Misc">
         <format>({%Author:1%, }{%Year%})</format>
@@ -273,7 +284,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2.|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;,}{ [%Medium%].}{ {%Day% }%Month:s%.}{ %Pages:p.:pp.:a2%}.{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
+          <format>{%Author:2.|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;,}{ %Day%}{ %Month:s%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Pages:p.:pp.:a2%.}{ [%Medium%].}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -323,7 +334,7 @@
           <valign>top</valign>
           <format>{%Title|ShortTitle%.}{ %Year|"n.d."%{%YearSuffix%}.}{ Directed by %Director:4%.}{ [%Medium|"Film"%].}{ %City|CountryRegion%{, %CountryRegion%}}{: %Publisher|ProductionCompany%}}{ %Publisher|ProductionCompany%}.{ %Comments%.}</format>
         </column>
-        <sortkey>{%Director:0%}{%Year|"n.d."%}</sortkey>
+        <sortkey>{%Title|ShortTitle%}{%Year|"n.d."%}</sortkey>
       </source>
       <source type="InternetSite">
         <column id="1">
@@ -345,7 +356,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;,}{ %Volume%{(%Issue%)}}{ (%Issue%)}{: %Pages%.}{. %Comments%.}{[%Medium%]}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;,}{ %Volume%{(%Issue%)}}{ (%Issue%)}{: %Pages%.}{. [%Medium%].}{ DOI: %DOI%}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
