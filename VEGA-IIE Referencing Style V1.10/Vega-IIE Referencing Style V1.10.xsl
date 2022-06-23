@@ -292,7 +292,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.{ %Edition:o% ed.}}{ Translated by %Translator:5%.}{ [%Medium%].}{ %City|StateProvince|CountryRegion%{, %StateProvince|CountryRegion%{, %CountryRegion%}}{: %Publisher%}.}{ %Publisher%.}.{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;{ [accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.{ %Edition:o% ed.}}{ Translated by %Translator:5%.}{ [%Medium%].}{ %City|StateProvince|CountryRegion%{, %StateProvince|CountryRegion%{, %CountryRegion%}}{: %Publisher|"s.n."%}.}{ %Publisher|"s.n."%.}.{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;{ [accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -300,7 +300,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.{ %Edition:o% ed.}}{ Translated by %Translator:5%.}{ [%Medium%].}{ %City|StateProvince|CountryRegion%{, %StateProvince|CountryRegion%{, %CountryRegion%}}{: %Publisher%}.}{ %Publisher%.}.{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;{ [accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.{ %Edition:o% ed.}}{ Translated by %Translator:5%.}{ [%Medium%].}{ %City|StateProvince|CountryRegion%{, %StateProvince|CountryRegion%{, %CountryRegion%}}{: %Publisher|"s.n."%}.}{ %Publisher|"s.n."%.}.{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;{ [accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a|BookTitle:a%}</sortkey>
       </source>
@@ -308,7 +308,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%}{ %Year:r|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%ConferenceName%&lt;/i&gt;.}{ {{%Day%} %Month:s%} %Year%.}{ %City|CountryRegion%{, %CountryRegion%}:}{ %Publisher%}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%}{ %Year:r|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%ConferenceName%&lt;/i&gt;.}{ {{%Day%} %Month:s%} %Year%.}{ %City|CountryRegion%{, %CountryRegion%}:}{ %Publisher|"s.n."%}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -316,7 +316,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ [%Medium%].}{ %City|StateProvince|CountryRegion%{, %StateProvince|CountryRegion%{, %CountryRegion%}}{: %Publisher%}.}{ %Publisher%.}.{ Available on: &lt;u&gt;%URL:l%&lt;/u&gt;{ [accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}}.{ %Comments%.}</format>
+          <format>{%Author:2|Editor:3|"Anon."%}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ [%Medium%].}{ %City|StateProvince|CountryRegion%{, %StateProvince|CountryRegion%{, %CountryRegion%}}{: %Publisher|"s.n."%}.}{ %Publisher|"s.n."%.}.{ Available on: &lt;u&gt;%URL:l%&lt;/u&gt;{ [accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|InternetSiteTitle:a|"Anon."%}{%Year|"n.d."%}{%Title:a%}</sortkey>
       </source>
