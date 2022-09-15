@@ -57,3 +57,4 @@ Films, Journals/Articles, Reports, Websites, and misc.
 •fixed sorting issue on the film source type
 •implimented the journal article source type
 •broke article from Periodicle source type
+•fixed broken installer file
